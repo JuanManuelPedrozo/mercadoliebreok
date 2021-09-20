@@ -4,8 +4,8 @@ const path = require('path');
 app.use(express.static('public'));
 
 app.get('/', (req,res) => {res.sendFile(path.resolve('./views/home.html'));});
-app.get('/',(req,res)=>{ res.sendFile(path.resolve('./views/login.html'));});
-app.get('/', (req, res) => { res.sendFile(path.resolve('./views/register.html')) ;});
+app.get('/login.html',(req,res)=>{ res.sendFile(path.resolve('./views/login.html'));});
+app.get('/register.html', (req, res) => { res.sendFile(path.resolve('./views/register.html')) ;});
 
 
 
