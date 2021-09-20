@@ -27,8 +27,9 @@
     <header>
         <div class="navLogo">
             <div class="logo">
-                <a href="/views/home.html" method="POST"><img src="images/logo-mercado-liebre.svg" width="360" alt="Logo de MercadoLiebre">
-            </a>
+                <a href="/views/home.html" method="POST"><img src="images/logo-mercado-liebre.svg" width="360"
+                        alt="Logo de MercadoLiebre">
+                </a>
             </div>
             <div class="buscador">
                 <i class="fa fa-search"></i>
@@ -58,71 +59,71 @@
         </div>
     </header>
     <main>
+
         
-        </form>
         <div class="formulario">
-        <div class="datos">
-            <form action="resultado.html" method="POST"></form>
-            <label for="nombre">Nombre y Apellido:</label>
-            <input type="text" name="nombre" id="nombre">
+            <div class="datos">
+                <form action="resultado.html" method="POST"></form>
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" name="nombre" id="nombre">
 
-            <label for="nombre">Nombre de Usuario</label>
-            <input type="text" name="nombre de usuario" id="nombre de usuario">
+                <label for="nombre">Nombre de Usuario</label>
+                <input type="text" name="nombre de usuario" id="nombre de usuario">
 
 
-            <label for="">domicilio</label>
-            <input type="text" name="domicilio" id="domicilio">
+                <label for="">domicilio</label>
+                <input type="text" name="domicilio" id="domicilio">
+            </div>
+            <p>Fecha de Nacimiento</p>
+            <div class="fecha">
+                <input type="date" name="fecha" value="2021-07-2" min="2022-12-31">
+            </div>
+            <p>perfil de usuario</p>
+            <div class="perfil">
+                <input type="radio" name="rol" value="comprador">
+                <label for="comprador">comprador</label>
+                <input type="radio" name="rol" value="Vendedor">
+                <label for="Vendedor">Vendedor</label>
+            </div>
+            <p>intereses</p>
+            <div class="intereses">
+                <input type="checkbox" name="intereses" value="electro">
+                <label for="intereses">electro</label>
+
+                <input type="checkbox" name="intereses" value="moda">
+                <label for="intereses">moda</label>
+
+                <input type="checkbox" name="intereses" value="hogar">
+                <label for="intereses">hogar</label>
+
+                <input type="checkbox" name="intereses" value="jugueteria">
+                <label for="intereses">jugueteria</label>
+
+                <input type="checkbox" name="intereses" value="vida sana">
+                <label for="intereses">vida sana</label>
+
+            </div>
+            <div class="foto">
+                <label>imagen de perfil</label>
+                <input type="file" name="avatar" accept=".jpg" multiple>
+            </div>
+            <div class="contra">
+
+                <form action="resultado.html" method="POST"></form>
+                <label for="constraseña">constraseña:</label>
+                <input type="password" name="constraseña" id="constraseña">
+
+                <form action="resultado.html" method="POST"></form>
+                <label for="constraseña">confirmar constraseña:</label>
+                <input type="password" name="constraseña" id="confirmar constraseña">
+            </div>
+
+
+            <div class="botones">
+                <button type="submit"> Enviar</button>
+                <button type="reset"> Borrar todos los datos</button>
+            </div>
         </div>
-        <p>Fecha de Nacimiento</p>
-        <div class="fecha">
-            <input type="date" name="fecha" value="2021-07-2" min="2022-12-31">
-        </div>
-        <p>perfil de usuario</p>
-        <div class="perfil">
-            <input type="radio" name="rol" value="comprador">
-            <label for="comprador">comprador</label>
-            <input type="radio" name="rol" value="Vendedor">
-            <label for="Vendedor">Vendedor</label>
-        </div>
-        <p>intereses</p>
-        <div class="intereses">
-            <input type="checkbox" name="intereses" value="electro">
-            <label for="intereses">electro</label>
-
-            <input type="checkbox" name="intereses" value="moda">
-            <label for="intereses">moda</label>
-
-            <input type="checkbox" name="intereses" value="hogar">
-            <label for="intereses">hogar</label>
-
-            <input type="checkbox" name="intereses" value="jugueteria">
-            <label for="intereses">jugueteria</label>
-
-            <input type="checkbox" name="intereses" value="vida sana">
-            <label for="intereses">vida sana</label>
-
-        </div>
-        <div class="foto">
-            <label>imagen de perfil</label>
-            <input type="file" name="avatar" accept=".jpg" multiple>
-        </div>
-        <div class="contra">
-
-            <form action="resultado.html" method="POST"></form>
-            <label for="constraseña">constraseña:</label>
-            <input type="password" name="constraseña" id="constraseña">
-
-            <form action="resultado.html" method="POST"></form>
-            <label for="constraseña">confirmar constraseña:</label>
-            <input type="password" name="constraseña" id="confirmar constraseña">
-        </div>
-
-
-        <div class="botones">
-            <button type="submit"> Enviar</button>
-            <button type="reset"> Borrar todos los datos</button>
-        </div>
-    </div>
     </main>
     <footer>
         <div class="footer1">

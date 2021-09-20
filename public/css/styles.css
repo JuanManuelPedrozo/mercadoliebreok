@@ -331,21 +331,21 @@ bucador
 enlaces
 */
 .formulario{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  width: 75%;
-  padding: 20px;
-  background-color: grey;
-
-
-}
-.datos, .fecha, .perfil, .intereses, .foto, .contra{
   display: block;
   align-items: center;
   flex-direction: column;
-  width: 75%;
+  text-align: center;
+  width: 90%;
+  padding: 20px;
+  background-color: rosybrown;
+}
+
+
+.datos, .fecha, .perfil, .intereses, .foto, .contra{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
   padding: 20px;
 
 }
