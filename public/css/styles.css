@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -17,45 +18,66 @@ h3 {
   font-size: 18px;
   text-align: left;
   margin-top: 5px;
-  width: 30%;
+  width: 28%;
   display: flex;
   
 }
 .descuento {
   font-size: 16px;
-  text-align: left;
+  text-align: right;
   color: #39b54a;
   margin-top: 5px;
-  width: 70%;
+  width: 68%;
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   
 }
 .descripcion {
-  font-size: 16px;
+  font-size: 10px;
   text-align: left;
   margin-top: 5px;
   display: none;
   opacity: 0%;
   transition: 900ms;
+  width: 100%;
 }
 header {
   background-color: #eac926;
+  
+  ;
 }
 header p {
-  margin-top: 10px;
+  margin-top: 10px
+  ;
 }
 header nav {
+  display: none;
   font-size: 12px;
   margin-top: 10px;
-  display: none;
+  justify-content: space-between;
+  
+  
+  
+}
+.navLogo{
+  display:flex;
 }
 header ul {
+  display: flex;
+  margin: 10px;
   margin-top: 10px;
 }
-
+.nav2{
+  display: flex;
+  justify-content: flex-end;
+}
 header ul li {
   list-style-type: none;
+  display: flex;
+  margin: 10px;
+  margin-top: 10px;
+  
+  
 }
 header ul li a {
   text-decoration: none;
@@ -79,14 +101,18 @@ main img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
-  width: 50%;
+  width: 45%;
 }
 .buscador{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 50%;
+  align-self: flex-end;
+  padding: 10px;
+}
+.p{
+  align-items: flex-end;
 }
 
 
@@ -96,7 +122,10 @@ main img {
   text-align: center;
   font-size: 2em;
   margin-bottom: 10px;
+  
 }
+
+
 footer p {
   text-align: center;
   padding: 10px;
@@ -116,14 +145,31 @@ footer {
 main section {
   width: 90%;
   margin: auto;
+  align-items: center;
+justify-content: space-around;
+  
+ 
 }
 main section article {
-  margin-top: 10px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+margin-top: 10px;
+
+  
+  
 }
 .contenedor-articulo {
   border-top: 1px solid #ebebeb;
   background-color: #fff;
   padding: 15px;
+  width: 100%;
+  padding: 1px;
+  display: block;
+  border: solid 2px red;
+
 }
 .circulo-icono {
   color: #39b54a;
@@ -140,6 +186,7 @@ main section article {
 .fa-truck {
   margin: 5px;
   transition: (-90deg);
+  float: right;
 }
 
 .contenedor1{
@@ -147,62 +194,10 @@ main section article {
   flex-direction: row;
   flex-wrap: wrap;
   box-sizing: content-box;
+  padding: 1px;
   }
   
-  
-.contenedor2{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  box-sizing: content-box;
-  }
-  
-.contenedor3{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  box-sizing: content-box;
-  }
-  
-.contenedor4{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  box-sizing: content-box;
-  }
-  
-.contenedor5{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  box-sizing: content-box;
-  }
-  
-.contenedor6{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  box-sizing: content-box;
-  }
-  
-.contenedor7{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  box-sizing: content-box;
-  }
-  
-.contenedor8{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  box-sizing: content-box;
-  }
-  .producto{
-
-  }
-
-@media (min-width: 480px) {
+@media (min-width: 361px) {
   .descripcion {
     display: flex;
     flex-direction: row;
@@ -210,15 +205,25 @@ main section article {
     justify-content: space-between;
     align-items: flex-start;
   }
+  
+  main section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   main section article {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    
+        width: 40%;
   }
-  .producto:hover.descripciones{
+  .article:hover.descripciones{
     display: block;
     opacity: 100%;
+    transition: 1s;
   }
   header nav {
-    display: block;
+    display: flex;
+
   }
   .burger-menu {
     display: none;
@@ -228,42 +233,66 @@ main section article {
   transform: rotate(-90deg);
   transition: 1s;
 }
-/*@media (min-width: 768px){
+@media (min-width: 769px){
+  main section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  main section article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    
+        justify-content: space-around;
+        width: 20%;
 
+    
+    
+    
+  }
 
 }
 
-}*/
-.producto:hover {
+
+@media (min-width: 1200px) {
+
+  header nav {margin: auto;
+  }
+
+  
+.article:hover {
   box-shadow: 0px 0px 10px rgba(100, 100, 100);
 }
 
-.producto:hover .descripciones {
+.producto:hover.descripcion {
   display: block;
 }
 
 
 
-/*
-borrador{
-BOTONLOGIN:hover {
+
+/*BOTONLOGIN:hover {
   background-color: #0022AA;
   transition: 1s;
-}
+}*/
 footer {
   display: flex;
   flex-wrap: wrap;
   justify-content:space-around;
 }
 
-.footer-control {
+.footer1 {
   width: 33%;
 }
-
-.descripciones:hover{
-  opacity: 100%;
+.footer-icons:hover{
+     color: red;
+  transition: 1s;
 }
-.descripciones {
+.descripcione:hover{
+  opacity: 100%;
+  display: block;
+}
+.descripcion {
   text-align: left;
   font-size: 16px;
   margin-top: 5px;
@@ -272,16 +301,39 @@ footer {
   opacity: 0%;
   transition: 900ms;
 }
-.producto:hover {
+.article:hover {
   box-shadow: 0px 0px 10px rgba(100, 100, 100);
 }
 
-.producto:hover .descripciones {
+
+
+}
+/* formulario*/
+.formulario{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 75%;
+  border: solid 2px red;
+  padding: 20px;
+  background-color: grey;
+
+
+}
+.datos, .fecha, .perfil, .intereses, .foto, .contra{
   display: block;
+  align-items: center;
+  flex-direction: column;
+  width: 75%;
+  padding: 20px;
 }
-main article:hover .descripciones {
-  display:inline;
-  
-  
-}
+
+.ingresa{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 35%;
+  padding: 50px;
+  border: solid 2px blue;
 }
